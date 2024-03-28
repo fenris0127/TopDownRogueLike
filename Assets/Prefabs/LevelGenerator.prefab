@@ -1,0 +1,218 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &143633921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 143633922}
+  m_Layer: 0
+  m_Name: RoomCenter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &143633922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143633921}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5336776520895118510}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1281281231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1281281232}
+  m_Layer: 0
+  m_Name: Wall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1281281232
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281281231}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5336776520895118510}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1593188983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1593188984}
+  m_Layer: 0
+  m_Name: Room
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1593188984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593188983}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5336776520895118510}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5336776520895118508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5336776520895118510}
+  - component: {fileID: 5336776520895118509}
+  m_Layer: 0
+  m_Name: LevelGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5336776520895118510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5336776520895118508}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5336776521114232815}
+  - {fileID: 1593188984}
+  - {fileID: 1281281232}
+  - {fileID: 143633922}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5336776520895118509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5336776520895118508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65bebd983d8aae42a02c19530e7ee69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomPos: {fileID: 1593188983}
+  wallPos: {fileID: 1281281231}
+  roomCenterPos: {fileID: 143633921}
+  layoutRoom: {fileID: 1385099849108282607, guid: a6e87b8960a7c4a4a9ccf4328fafa7f7, type: 3}
+  distanceToEnd: 10
+  includeShop: 1
+  minDistanceToShop: 3
+  maxDistanceToShop: 7
+  startColor: {r: 0.14858341, g: 1, b: 0, a: 1}
+  tresureColor: {r: 0.9972335, g: 1, b: 0, a: 1}
+  shopColor: {r: 0, g: 1, b: 1, a: 1}
+  endColor: {r: 1, g: 0, b: 0, a: 1}
+  selectedDirection: 0
+  generatorPoint: {fileID: 5336776521114232815}
+  xOffset: 18
+  yOffset: 10
+  whatIsRoom:
+    serializedVersion: 2
+    m_Bits: 32768
+  rooms:
+    roomDown: {fileID: 8057488808356199414, guid: 4bc854103a866db4f88b0c46a504f22a, type: 3}
+    roomLeft: {fileID: 2645042965274134763, guid: 5aaf82b1359a7944eaffed59f870b723, type: 3}
+    roomRight: {fileID: 4811646781748402697, guid: ee740a688e1e9044ea75ce4b3d012626, type: 3}
+    roomUp: {fileID: 8385401341235814549, guid: d8403500351ab4c4dbe399d89f27c4d6, type: 3}
+    roomLeftDown: {fileID: 175648647811063469, guid: 0c1abe924e2c47b4da37211765322f4a, type: 3}
+    roomLeftRight: {fileID: 1582876076085335696, guid: e189e930377dfe840846cf00ba1bc3db, type: 3}
+    roomLeftRightDown: {fileID: 9036821909933373214, guid: 41d08a49adedabe4c8ac249b87fa0b9a, type: 3}
+    roomRightDown: {fileID: 2046374492107611594, guid: 54cfb6abaee14bd458f7e3c9fdc5768f, type: 3}
+    roomUpDown: {fileID: 179006973023640800, guid: 0b86c869d557fbe49a866a3382fd1049, type: 3}
+    roomUpDownLeft: {fileID: 2514364045688592959, guid: 6c8b7a1841822d34291a4d2f92211ad9, type: 3}
+    roomEveryDirection: {fileID: 6428692296631627469, guid: efb0da92b8db03f4a9b167a93cd3945b, type: 3}
+    roomUpDownRight: {fileID: 7112246677509606301, guid: 6b5ee3a5372cb0d4390363c1ee85c293, type: 3}
+    roomUpLeft: {fileID: 7490644403845052083, guid: 89976238b5a8b8f45b7a7eb76c74c647, type: 3}
+    roomUpLeftRight: {fileID: 750945428796283509, guid: c189d001bbbddd542b480f30af33dc4d, type: 3}
+    roomUpRight: {fileID: 7793497610668834098, guid: 36e7f9a615e1fa54d964c5fb4871a797, type: 3}
+  centerStart: {fileID: 9138863819406090636, guid: 98fd1fab5d3a15143b197415b8c282f3, type: 3}
+  centerEnd: {fileID: 7331731494800011513, guid: 770c663a075d99d43b60ddfb99232e86, type: 3}
+  centerShop: {fileID: 7287240358077289593, guid: c1c851554560cff4f85172dcd88e4607, type: 3}
+  potentialCenters:
+  - {fileID: 4464264168006231490, guid: 61931ce1ed10db14692ee382905c088f, type: 3}
+  - {fileID: 7911597439177629041, guid: d710c1dcf5a5e334786a9350651d0c8a, type: 3}
+  - {fileID: 7673102138559805634, guid: 4c824ff3e08d65449a6178898e9684d0, type: 3}
+  layoutRoomObjects: []
+  generatedOutline: []
+--- !u!1 &5336776521114232814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5336776521114232815}
+  m_Layer: 0
+  m_Name: GenerationPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5336776521114232815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5336776521114232814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5336776520895118510}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
