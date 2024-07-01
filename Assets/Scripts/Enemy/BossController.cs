@@ -100,6 +100,7 @@ public class BossController : MonoBehaviour
             if(Vector3.Distance(PlayerMovement.instance.transform.position, levelExit.transform.position) < 2f){
                 levelExit.transform.position += new Vector3(4f, 0f, 0f);
             }
+            
             levelExit.SetActive(true);
 
             UISystem.instance.winScreen.SetActive(true);
